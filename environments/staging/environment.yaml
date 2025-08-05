@@ -13,7 +13,7 @@ app:
   #maven:
   #  groupId: net.wasdev.wlp.sample
   #  artifactId: ferret
-  #  version: 1.2
+  #  version: "1.2"
   #  type: war
 
   # Set minimum and maximum number of instances of the application. 
@@ -80,6 +80,6 @@ app:
   # preferred way is to provide the crn value as the service instance names
   # can change and might not be unique.
   #services:
-  #- crn: crn:v1:bluemix:public:dashdb-for-transactions:us-east:a/123:456::
+  #- crn: "crn:v1:bluemix:public:dashdb-for-transactions:us-east:a/123:456::"
   #- name: "my Db2 instance"
-  #  type: db2
+  #  type: dashdb-for-transactions
