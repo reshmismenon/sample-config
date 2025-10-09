@@ -65,6 +65,14 @@ app:
   # within a subscription.
   endpoints: public
 
+  # Enable mp health to retrieve Application status via health check 
+  # If application takes longer time than configured startupTimeout, the deployment would fail
+  # startupCheckInterval is the time interval at which startup probe would be checked
+  # checkInterval is the time interval at which readiness probe would be checked
+  startupTimeout: 120
+  startupCheckInterval: "150"
+  checkInterval: "10"
+
   # Set the Java runtime version for the application. Set to 8 for IBM Java 8,
   # 17 for IBM Semeru 17, or 21 for IBM Semeru 21. If not set, the service
   # tries to automatically detect the Java version for the application. If the
