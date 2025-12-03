@@ -64,7 +64,7 @@ app:
   # is only available on an internal endpoint accessible to other applications
   # within a subscription.
   endpoints: public
-  startupTimeout: 300 
+  startupTimeout: 35
   # Set the Java runtime version for the application. Set to 8 for IBM Java 8,
   # 17 for IBM Semeru 17, or 21 for IBM Semeru 21. If not set, the service
   # tries to automatically detect the Java version for the application. If the
